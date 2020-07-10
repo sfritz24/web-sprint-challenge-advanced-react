@@ -34,11 +34,17 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 2. Describe the different phases of the component lifecycle.
 
+    There is the inital mount or the very first time the component renders, then theres the update mount in which when something changes either with props or state the component will rerender but not the entire thing, just the updated bits and this is where you would have your event listeners, then there's unmounting when the component gets removed from the screen, it's the clean up for any events. 
+
 3. Demonstrate an understanding of class component lifecycle methods.
 
 4. Define stateful logic.
 
+    Stateful logic is logic that is in the component, things like initial state, setting state, an event handle that changes state. A lot of stateful logic probably can be built into custom hooks so that they can be used all over keeping your code DRY.
+
 5. Describe how to test a React component with React Testing Library.
+
+    Testing with React allows us to test the funcionality of our components in a way that if someone comes behind us and changes the code but leaves the content alone then our tests will still pass (provided they passed before). We can make sure things are behaving the way we expect them to. If there's errors it will point us in the right direction of where to look. It's also automated (to some degree) and reduces the need to have a user go through and test it manually.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
