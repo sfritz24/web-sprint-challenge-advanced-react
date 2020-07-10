@@ -30,6 +30,8 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+    You declare your class component and extend to the React.Component parent. Then you need to at least call render() and return your divs and whatever you need to show up. Then if you need state (which you probably will) you set up a constructor and call super within it and call your state. You will use 'this.' throughout your component.
+
 2. Describe the different phases of the component lifecycle.
 
 3. Demonstrate an understanding of class component lifecycle methods.
