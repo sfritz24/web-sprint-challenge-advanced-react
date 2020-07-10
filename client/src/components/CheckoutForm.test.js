@@ -7,7 +7,7 @@ import CheckoutForm from "./CheckoutForm";
 test("form header renders", () => {
     render(<CheckoutForm/>);
 
-    const header = screen.getByText(/form/i);
+    const header = screen.getByText(/checkout form/i);
 
     expect(header).toBeInTheDocument();
 });
@@ -29,9 +29,9 @@ test("form shows success message on submit with form details", () => {
     fireEvent.change(stateInput, {target: {value: 'Minnesota'}});
     fireEvent.change(zipInput, {target: {value: 56537}});
 
-    const checkoutButton = screen.getByText(/checkout/i);
+    const checkoutButton = screen.getAllByText(/checkout/i);
 
-    fireEvent.click(checkoutButton);
+    fireEvent.click(checkoutButton[1]);
 
     const successMessage = screen.getByText(/you have ordered/i);
 
